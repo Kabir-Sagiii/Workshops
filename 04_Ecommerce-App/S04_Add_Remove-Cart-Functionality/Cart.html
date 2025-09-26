@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart Page</title>
+    <link rel="stylesheet" href="Cart.css" />
+  </head>
+  <body>
+    <header>
+      <section class="brandName">
+        <h1>Dude's-Mart</h1>
+      </section>
+
+      <section class="menus">
+        <a href="Home.html">Home</a>
+        <a href="Products.html">Products</a>
+        <a href="Cart.html">Carts</a>
+        <a href="">ContactUs</a>
+        <button>Logout</button>
+      </section>
+    </header>
+    <main>
+      <div class="cart-container">
+        <div class="cart-header">
+          <div class="cart-column image">Product</div>
+          <div class="cart-column name">Name</div>
+          <div class="cart-column price">Price</div>
+          <div class="cart-column quantity">Quantity</div>
+          <div class="cart-column remove">Remove</div>
+        </div>
+
+        <!-- Dynamic Cart Items Will Be Inserted Here -->
+        <div id="cart-body"></div>
+
+        <div class="cart-footer">
+          Total: $<span id="total-price">0.00</span>
+        </div>
+      </div>
+    </main>
+    <script src="Cart.js"></script>
+  </body>
+</html>
