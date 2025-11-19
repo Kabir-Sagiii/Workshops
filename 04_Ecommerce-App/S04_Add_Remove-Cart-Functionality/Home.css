@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+}
+header {
+  height: 15%;
+  background: black;
+  box-shadow: 0 0 10px green;
+  display: grid;
+  grid-template-columns: 45% 55%;
+}
+header .brandName {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.brandName h1 {
+  font-size: 52px;
+  color: white;
+}
+.brandName h1:hover {
+  transform: scale(1.3);
+  color: green;
+}
+
+header .menus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menus a {
+  color: white;
+  font-size: 17px;
+  text-decoration: none;
+  margin-right: 50px;
+}
+.menus a:hover {
+  color: green;
+  font-weight: bold;
+  transform: scale(1.1);
+}
+.menus button {
+  padding: 11px 25px;
+  border: 2px solid red;
+  border-radius: 5px;
+  background: none;
+  color: red;
+  font-size: 17px;
+  font-weight: bolder;
+}
+.menus button:hover {
+  background-color: red;
+  color: white;
+}
+
+main {
+  height: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("https://thumbs.dreamstime.com/z/flat-lay-photo-office-table-laptop-computer-notebook-digital-tablet-mobile-phone-modern-two-tone-background-pencil-103808696.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+main p {
+  width: 80%;
+  font-size: 17px;
+  color: whitesmoke;
+}
+main h1 {
+  font-size: 72px;
+  margin-bottom: 10px;
+  color: yellow;
+}

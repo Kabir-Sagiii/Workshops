@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+
+  <body>
+    <h1>LocalStorage in Javascript</h1>
+    <button onclick="fnUpdate()">Update</button>
+    <button onclick="fnDisplay()">Display</button>
+    <button onclick="fnRemove()">Remove</button>
+    <script>
+      //   localStorage.setItem("name", "Sagar");
+
+      function fnInsert() {
+        localStorage.setItem(
+          "data",
+          JSON.stringify({ name: "Riya Verma", gender: "female" })
+        );
+      }
+      fnInsert();
+
+      function fnUpdate() {
+        localStorage.setItem("name", "Kabir");
+      }
+
+      function fnDisplay() {
+        var value = localStorage.getItem("data");
+        value = JSON.parse(value);
+        console.log(value.name);
+      }
+
+      function fnRemove() {
+        localStorage.removeItem("name");
+      }
+    </script>
+  </body>
+</html>
