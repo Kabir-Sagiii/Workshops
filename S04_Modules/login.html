@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+  </head>
+  <body
+    style="
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f2f2f2;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    "
+  >
+    <div
+      style="
+        width: 320px;
+        padding: 32px 28px;
+        background: #ffffff;
+        border-radius: 14px;
+        box-shadow: 0 14px 30px rgba(0, 0, 0, 0.12);
+      "
+    >
+      <h2
+        style="
+          margin: 0 0 20px;
+          font-size: 24px;
+          color: #333;
+          text-align: center;
+        "
+      >
+        My Login Form
+      </h2>
+      <form
+        action="#"
+        method="post"
+        style="display: flex; flex-direction: column; gap: 16px"
+      >
+        <label
+          style="
+            display: flex;
+            flex-direction: column;
+            font-size: 14px;
+            color: #555;
+          "
+        >
+          Email
+          <input
+            type="email"
+            name="email"
+            required
+            placeholder="email id"
+            style="
+              margin-top: 6px;
+              padding: 10px 12px;
+              font-size: 15px;
+              border: 1px solid #ccc;
+              border-radius: 8px;
+              outline: none;
+              transition: border-color 0.2s ease;
+            "
+            onfocus="this.style.borderColor = '#5b9df9'"
+            onblur="this.style.borderColor = '#ccc'"
+          />
+        </label>
+        <label
+          style="
+            display: flex;
+            flex-direction: column;
+            font-size: 14px;
+            color: #555;
+          "
+        >
+          Password
+          <input
+            type="password"
+            name="password"
+            required
+            placeholder="password"
+            style="
+              margin-top: 6px;
+              padding: 10px 12px;
+              font-size: 15px;
+              border: 1px solid #ccc;
+              border-radius: 8px;
+              outline: none;
+              transition: border-color 0.2s ease;
+            "
+            onfocus="this.style.borderColor = '#5b9df9'"
+            onblur="this.style.borderColor = '#ccc'"
+          />
+        </label>
+        <button
+          type="submit"
+          style="
+            width: 100%;
+            padding: 12px 16px;
+            font-size: 16px;
+            color: #fff;
+            background: #3b82f6;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background 0.2s ease;
+          "
+        >
+          Sign In
+        </button>
+        <div
+          style="
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 13px;
+            color: #777;
+          "
+        >
+          <label style="display: flex; align-items: center; gap: 6px">
+            <input
+              type="checkbox"
+              name="remember"
+              style="transform: scale(1.03)"
+            />
+            Remember me
+          </label>
+          <a href="#" style="color: #3b82f6; text-decoration: none">Forgot?</a>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
